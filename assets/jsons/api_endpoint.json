@@ -1,0 +1,6 @@
+{
+  "login": {
+    "endpoint": "",
+    "method": "post"
+  }
+}

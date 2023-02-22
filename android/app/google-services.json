@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "707792164654",
+    "project_id": "lazi-8cf4b",
+    "storage_bucket": "lazi-8cf4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707792164654:android:89d80cd108c6656b748cbf",
+        "android_client_info": {
+          "package_name": "app.lazi.vn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707792164654-dbgd9ruifrp2dgolt18jeuj0harhap8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.lazi.vn",
+            "certificate_hash": "30fac5c33f41ac633012b9d5bbe796d77afb704d"
+          }
+        },
+        {
+          "client_id": "707792164654-kmsq16p4jtjsjmn558mv9mpua213027o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.lazi.vn",
+            "certificate_hash": "fb6977fc9bf06e4fc70d5c27e416959fbe7db9fa"
+          }
+        },
+        {
+          "client_id": "707792164654-rbs8h9o0vbbjdgisl0m0a1n36a0l8uq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.lazi.vn",
+            "certificate_hash": "0f5cac2d01c741a87dacc02d3689bb25f99bf708"
+          }
+        },
+        {
+          "client_id": "707792164654-p5rjb15rn2ebgj6q1qf3aevqdf4la7rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWBwLuOIrcfM7jpEkk-xPU7NTUM5ZktAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707792164654-p5rjb15rn2ebgj6q1qf3aevqdf4la7rp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "707792164654-0aj3foad38u5q1ve0gtlm1r5h0t441j0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.lazi.chatapp.appchat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707792164654:android:24de7c96b23f5345748cbf",
+        "android_client_info": {
+          "package_name": "vn.lazi.laChat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707792164654-931q5nn7s2cun1l4p6ug62c1h2criruu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.lazi.laChat",
+            "certificate_hash": "437b49d53ad5d1abc9ab04b088b3962a21abbd72"
+          }
+        },
+        {
+          "client_id": "707792164654-b123glbimerujnji14sqhuvdk74bfajl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.lazi.laChat",
+            "certificate_hash": "0417ee1ba6f7cb94ab6a45fbbd3b30de0da64445"
+          }
+        },
+        {
+          "client_id": "707792164654-h21pb48q2uk8gipg63tmb7p3ppk5vipq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.lazi.laChat",
+            "certificate_hash": "d76e99a9632908530efd192472b3ad7c3d0bfd27"
+          }
+        },
+        {
+          "client_id": "707792164654-paieucfnk658d9rgkoe47uq17oql8mbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.lazi.laChat",
+            "certificate_hash": "a50c22da579b64a1dd2f83dfc4f9321abf75baaa"
+          }
+        },
+        {
+          "client_id": "707792164654-phu0tap0tr97stm56ampn4p9nfiucloh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.lazi.laChat",
+            "certificate_hash": "9ba0b50bd4a2f173c636e1df4986fc52d7580374"
+          }
+        },
+        {
+          "client_id": "707792164654-p5rjb15rn2ebgj6q1qf3aevqdf4la7rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWBwLuOIrcfM7jpEkk-xPU7NTUM5ZktAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707792164654-p5rjb15rn2ebgj6q1qf3aevqdf4la7rp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "707792164654-0aj3foad38u5q1ve0gtlm1r5h0t441j0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.lazi.chatapp.appchat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
