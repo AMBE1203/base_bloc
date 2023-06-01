@@ -1,16 +1,16 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get_it/get_it.dart';
-import 'package:lazi_chat/core/network/index.dart';
-import 'package:lazi_chat/data/local/index.dart';
-import 'package:lazi_chat/data/net/index.dart';
-import 'package:lazi_chat/data/remote/api/index.dart';
-import 'package:lazi_chat/data/remote/base/index.dart';
-import 'package:lazi_chat/data/repository/index.dart';
-import 'package:lazi_chat/domain/provider/index.dart';
-import 'package:lazi_chat/domain/repository/index.dart';
-import 'package:lazi_chat/domain/usecase/index.dart';
-import 'package:lazi_chat/presentation/page/login/index.dart';
-import 'package:lazi_chat/presentation/utils/index.dart';
+import 'package:lunar_calendar/core/network/index.dart';
+import 'package:lunar_calendar/data/local/index.dart';
+import 'package:lunar_calendar/data/net/index.dart';
+import 'package:lunar_calendar/data/remote/api/index.dart';
+import 'package:lunar_calendar/data/remote/base/index.dart';
+import 'package:lunar_calendar/data/repository/index.dart';
+import 'package:lunar_calendar/domain/provider/index.dart';
+import 'package:lunar_calendar/domain/repository/index.dart';
+import 'package:lunar_calendar/domain/use_case/index.dart';
+import 'package:lunar_calendar/presentation/page/login/index.dart';
+import 'package:lunar_calendar/presentation/utils/index.dart';
 
 GetIt injector = GetIt.asNewInstance();
 

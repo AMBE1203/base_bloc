@@ -1,5 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:lazi_chat/core/utils/index.dart';
+import 'package:lunar_calendar/core/utils/index.dart';
 import 'package:logger/logger.dart';
 
 const kDeviceIdKey = 'kDeviceIdKey';

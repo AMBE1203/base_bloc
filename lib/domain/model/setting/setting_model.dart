@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
-import 'package:lazi_chat/core/utils/index.dart';
-import 'package:lazi_chat/domain/enum/index.dart';
+import 'package:lunar_calendar/core/utils/index.dart';
+import 'package:lunar_calendar/domain/enum/index.dart';
 
 const kNotification = "NOTIFICATION";
 const kLanguage = "LANGUAGE";

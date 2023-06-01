@@ -47,16 +47,7 @@ class RoundContainer extends StatelessWidget {
       margin: margin,
       padding: padding,
       decoration: BoxDecoration(
-          boxShadow: shadow
-          // [
-          //   BoxShadow(
-          //     color: Colors.grey.withOpacity(0.15),
-          //     spreadRadius: 1,
-          //     blurRadius: 1,
-          //     offset: const Offset(0, 0),
-          //   ),
-          // ],
-          ,
+          boxShadow: shadow,
           color: color ?? Colors.white,
           borderRadius: radius,
           border: borderColor != null

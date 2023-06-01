@@ -1,7 +1,7 @@
-import 'package:lazi_chat/core/network/index.dart';
-import 'package:lazi_chat/data/net/index.dart';
-import 'package:lazi_chat/data/remote/api/index.dart';
-import 'package:lazi_chat/main/app_injector.dart';
+import 'package:lunar_calendar/core/network/index.dart';
+import 'package:lunar_calendar/data/net/index.dart';
+import 'package:lunar_calendar/data/remote/api/index.dart';
+import 'package:lunar_calendar/main/app_injector.dart';
 
 import 'index.dart';
 

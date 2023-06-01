@@ -1,5 +1,5 @@
-import 'package:lazi_chat/data/local/index.dart';
-import 'package:lazi_chat/data/remote/api/index.dart';
+import 'package:lunar_calendar/data/local/index.dart';
+import 'package:lunar_calendar/data/remote/api/index.dart';
 import 'package:logger/logger.dart';
 
 class RequestHeaderBuilder {

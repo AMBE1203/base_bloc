@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lazi_chat/domain/model/index.dart';
-import 'package:lazi_chat/presentation/app/index.dart';
-import 'package:lazi_chat/presentation/navigator/page_navigator.dart';
+import 'package:lunar_calendar/domain/model/index.dart';
+import 'package:lunar_calendar/presentation/app/index.dart';
+import 'package:lunar_calendar/presentation/navigator/page_navigator.dart';
 
 import 'index.dart';
 

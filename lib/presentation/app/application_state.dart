@@ -1,5 +1,5 @@
-import 'package:lazi_chat/core/error/index.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
+import 'package:lunar_calendar/core/error/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
 
 class ApplicationState extends BaseState {
   AppLaunchTag tag;

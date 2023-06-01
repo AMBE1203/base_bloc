@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:lazi_chat/core/utils/consts.dart';
-import 'package:lazi_chat/domain/model/index.dart';
+import 'package:lunar_calendar/core/utils/consts.dart';
+import 'package:lunar_calendar/domain/model/index.dart';
 
 import 'index.dart';
 

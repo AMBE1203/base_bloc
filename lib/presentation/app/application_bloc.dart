@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lazi_chat/core/error/index.dart';
-import 'package:lazi_chat/core/utils/consts.dart';
-import 'package:lazi_chat/domain/repository/index.dart';
-import 'package:lazi_chat/domain/usecase/index.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
+import 'package:lunar_calendar/core/error/index.dart';
+import 'package:lunar_calendar/core/utils/consts.dart';
+import 'package:lunar_calendar/domain/repository/index.dart';
+import 'package:lunar_calendar/domain/use_case/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
 import 'package:rxdart/rxdart.dart';
 
 import 'index.dart';

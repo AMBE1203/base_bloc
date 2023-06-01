@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lazi_chat">
+    package="com.ambe.lunar_calendar">
    <application
-        android:label="lazi_chat"
+        android:label="lunar_calendar"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

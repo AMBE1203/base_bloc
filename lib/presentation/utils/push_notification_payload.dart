@@ -1,5 +1,5 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:lazi_chat/domain/model/index.dart';
+import 'package:lunar_calendar/domain/model/index.dart';
 
 class PushNotificationPayload {
   NotificationModel? data;

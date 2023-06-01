@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:focus_detector/focus_detector.dart';
-import 'package:lazi_chat/core/utils/consts.dart';
-import 'package:lazi_chat/main/app_injector.dart';
-import 'package:lazi_chat/presentation/app/index.dart';
-import 'package:lazi_chat/presentation/resources/index.dart';
-import 'package:lazi_chat/presentation/styles/index.dart';
-import 'package:lazi_chat/presentation/utils/index.dart';
+import 'package:lunar_calendar/core/utils/consts.dart';
+import 'package:lunar_calendar/main/app_injector.dart';
+import 'package:lunar_calendar/presentation/app/index.dart';
+import 'package:lunar_calendar/presentation/resources/index.dart';
+import 'package:lunar_calendar/presentation/styles/index.dart';
+import 'package:lunar_calendar/presentation/utils/index.dart';
 import 'package:logger/logger.dart';
 import 'package:provider/provider.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
 
 class LoginRouter with BaseRouter {
   @override

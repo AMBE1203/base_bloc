@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:lazi_chat/core/utils/index.dart';
+import 'package:lunar_calendar/core/utils/index.dart';
 
 class NotificationModel {
   int? notificationId;

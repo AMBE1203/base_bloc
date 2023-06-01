@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lazi_chat/presentation/styles/index.dart';
+import 'package:lunar_calendar/presentation/styles/index.dart';
 import 'package:shimmer/shimmer.dart';
 
 class ShimmerItemWidget extends StatelessWidget {
@@ -38,7 +38,7 @@ class ShimmerItemWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

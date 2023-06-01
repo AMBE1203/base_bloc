@@ -3,18 +3,17 @@ import 'dart:ui';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/physics.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lazi_chat/data/local/index.dart';
-import 'package:lazi_chat/data/net/index.dart';
-import 'package:lazi_chat/domain/provider/index.dart';
-import 'package:lazi_chat/domain/repository/index.dart';
-import 'package:lazi_chat/domain/usecase/index.dart';
-import 'package:lazi_chat/presentation/app/index.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
-import 'package:lazi_chat/presentation/page/login/index.dart';
-import 'package:lazi_chat/presentation/styles/index.dart';
-import 'package:lazi_chat/presentation/utils/index.dart';
+import 'package:lunar_calendar/data/local/index.dart';
+import 'package:lunar_calendar/data/net/index.dart';
+import 'package:lunar_calendar/domain/provider/index.dart';
+import 'package:lunar_calendar/domain/repository/index.dart';
+import 'package:lunar_calendar/domain/use_case/index.dart';
+import 'package:lunar_calendar/presentation/app/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
+import 'package:lunar_calendar/presentation/page/login/index.dart';
+import 'package:lunar_calendar/presentation/styles/index.dart';
+import 'package:lunar_calendar/presentation/utils/index.dart';
 import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'app_injector.dart';
@@ -109,7 +108,7 @@ class AppEntry {
     WidgetsFlutterBinding.ensureInitialized();
     _setupBackgroundNotification();
 
-    await Firebase.initializeApp();
+    // await Firebase.initializeApp();
     await initInjector();
     injector.get<EnvironmentProvider>().setFlavor(flavor: flavor);
     await Future.wait([

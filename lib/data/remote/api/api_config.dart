@@ -1,4 +1,4 @@
-import 'package:lazi_chat/domain/provider/index.dart';
+import 'package:lunar_calendar/domain/provider/index.dart';
 
 const baseApiUrlDev = '';
 const baseApiUrlProd = '';

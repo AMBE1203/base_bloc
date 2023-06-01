@@ -2,9 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:focus_detector/focus_detector.dart';
-import 'package:lazi_chat/presentation/styles/index.dart';
-import 'package:lazi_chat/presentation/widgets/index.dart';
-// import 'package:logger/logger.dart';
+import 'package:lunar_calendar/presentation/styles/index.dart';
+import 'package:lunar_calendar/presentation/widgets/index.dart';
 
 class AlertManager {
   static int alertShowingCount = 0;

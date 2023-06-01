@@ -1,7 +1,7 @@
-import 'package:lazi_chat/data/local/index.dart';
-import 'package:lazi_chat/data/remote/base/index.dart';
-import 'package:lazi_chat/domain/repository/index.dart';
-import 'package:lazi_chat/presentation/utils/push_notification_handler.dart';
+import 'package:lunar_calendar/data/local/index.dart';
+import 'package:lunar_calendar/data/remote/base/index.dart';
+import 'package:lunar_calendar/domain/repository/index.dart';
+import 'package:lunar_calendar/presentation/utils/index.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final AuthApi _authApi;

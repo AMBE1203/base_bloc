@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:images_picker/images_picker.dart';
-import 'package:lazi_chat/presentation/resources/index.dart';
-import 'package:lazi_chat/presentation/styles/index.dart';
-import 'package:lazi_chat/presentation/utils/index.dart';
-import 'package:lazi_chat/presentation/widgets/index.dart';
+import 'package:lunar_calendar/presentation/resources/index.dart';
+import 'package:lunar_calendar/presentation/styles/index.dart';
+import 'package:lunar_calendar/presentation/utils/index.dart';
+import 'package:lunar_calendar/presentation/widgets/index.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 mixin BasePageMixin {

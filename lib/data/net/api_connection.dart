@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'dart:convert' as convert;
 import 'dart:io';
-import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
-import 'package:lazi_chat/core/network/index.dart';
-import 'package:lazi_chat/core/utils/consts.dart';
-import 'package:lazi_chat/data/net/index.dart';
-import 'package:lazi_chat/data/remote/api/index.dart';
+import 'package:dio/io.dart';
+import 'package:lunar_calendar/core/network/index.dart';
+import 'package:lunar_calendar/core/utils/consts.dart';
+import 'package:lunar_calendar/data/net/index.dart';
+import 'package:lunar_calendar/data/remote/api/index.dart';
 import 'package:logger/logger.dart';
 
 class ApiConnection {
@@ -138,7 +138,7 @@ class ApiConnection {
   _handleError(error) {
     if (error is DioError) {
       switch (error.type) {
-        case DioErrorType.response:
+        case DioErrorType.badResponse:
           final httpStatusCode = error.response?.statusCode ?? 0;
           if (httpStatusCode == httpStatusServerMaintainCode ||
               httpStatusCode == httpStatusServerBadGatewayCode) {
@@ -154,7 +154,7 @@ class ApiConnection {
             );
           }
         case DioErrorType.sendTimeout:
-        case DioErrorType.connectTimeout:
+        case DioErrorType.connectionTimeout:
         case DioErrorType.receiveTimeout:
           throw ApiError(
             httpStatusCode: 0,
@@ -245,11 +245,11 @@ class ApiConnection {
       Map<String, dynamic>? requestHeader}) {
     var options = BaseOptions(
         baseUrl: baseUrl ?? _apiConfig.baseUrl,
-        connectTimeout: connectTimeout ?? _apiConfig.connectTimeout,
-        receiveTimeout: receiveTimeout ?? _apiConfig.receiveTimeout,
+        connectTimeout: Duration(milliseconds: connectTimeout ?? _apiConfig.connectTimeout),
+        receiveTimeout: Duration(milliseconds: receiveTimeout ?? _apiConfig.receiveTimeout),
         headers: requestHeader ?? header);
     Dio dio = Dio(options);
-    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+    (dio.httpClientAdapter as IOHttpClientAdapter).onHttpClientCreate =
         (HttpClient client) {
       client.badCertificateCallback =
           (X509Certificate cert, String host, int port) => true;

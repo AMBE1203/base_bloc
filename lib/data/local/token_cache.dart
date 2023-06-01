@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:lazi_chat/core/utils/consts.dart';
-import 'package:lazi_chat/data/local/index.dart';
-import 'package:lazi_chat/domain/model/index.dart';
+import 'package:lunar_calendar/core/utils/consts.dart';
+import 'package:lunar_calendar/data/local/index.dart';
+import 'package:lunar_calendar/domain/model/index.dart';
 
 abstract class TokenCache {
   Future<TokenModel?> getCachedToken();

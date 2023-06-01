@@ -44,7 +44,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "vn.lazi.laChat"
+        applicationId "com.ambe.lunar.calendar"
 
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
@@ -66,14 +66,14 @@ android {
     productFlavors {
         dev {
             dimension "app"
-            resValue "string", "app_name", "[DEV]ChatLazi"
-            applicationId "vn.lazi.laChat"
+            resValue "string", "app_name", "[DEV]Lunar Calendar"
+            applicationId "com.ambe.lunar.calendar.dev"
         }
 
         prod {
             dimension "app"
-            resValue "string", "app_name", "Chat Lazi"
-            applicationId "vn.lazi.laChat"
+            resValue "string", "app_name", "Lunar Calendar"
+            applicationId "com.ambe.lunar.calendar"
         }
     }
 
@@ -91,4 +91,4 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'

@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:lazi_chat/core/error/index.dart';
-import 'package:lazi_chat/domain/repository/index.dart';
+import 'package:lunar_calendar/core/error/index.dart';
+import 'package:lunar_calendar/domain/repository/index.dart';
 
 import 'index.dart';
 

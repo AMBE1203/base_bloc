@@ -5,8 +5,8 @@ import 'dart:ui';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:lazi_chat/domain/model/index.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
+import 'package:lunar_calendar/domain/model/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
 import 'package:logger/logger.dart';
 import 'dart:io' show Platform;
 
@@ -18,12 +18,14 @@ abstract class NotificationEvent extends BaseEvent {}
 // user tap into notification banner
 class NotificationTapEvent extends NotificationEvent {
   NotificationModel notification;
+
   NotificationTapEvent({required this.notification});
 }
 
 // notification comes
 class DidReceiveNotificationEvent extends NotificationEvent {
   bool appInBackground;
+
   DidReceiveNotificationEvent({this.appInBackground = false});
 }
 
@@ -33,6 +35,7 @@ class PushNotificationHandler {
   // tracking user tapped int notification event
   final PublishSubject<NotificationEvent> _notificationEventManager =
       PublishSubject<NotificationEvent>(sync: true);
+
   Stream<NotificationEvent> get notificationEventStream =>
       _notificationEventManager.stream.asBroadcastStream();
 
@@ -78,10 +81,13 @@ class PushNotificationHandler {
     // app in background, tapped remote notification
     FirebaseMessaging.onMessageOpenedApp.listen((event) {
       Logger().d('FirebaseMessaging onMessageOpenedApp background');
-      _notificationTappedHandler(PushNotificationPayload.fromJson(
-        event.data,
-        notification: event.notification,
-      ).data?.toJsonString());
+      _notificationTappedHandler(NotificationResponse(
+          payload: PushNotificationPayload.fromJson(
+            event.data,
+            notification: event.notification,
+          ).data?.toJsonString(),
+          notificationResponseType:
+              NotificationResponseType.selectedNotification));
     });
     // background notification comes
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
@@ -130,7 +136,7 @@ class PushNotificationHandler {
       android: initializationSettingsAndroid,
     );
     await _flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: _notificationTappedHandler);
+        onDidReceiveNotificationResponse: _notificationTappedHandler);
 
     await _flutterLocalNotificationsPlugin.show(
         1, data.title, data.body, platformChannelSpecifics,
@@ -142,7 +148,8 @@ class PushNotificationHandler {
     final NotificationAppLaunchDetails? notificationAppLaunchDetails =
         await _flutterLocalNotificationsPlugin
             .getNotificationAppLaunchDetails();
-    final jsonString = notificationAppLaunchDetails?.payload ?? '';
+    final jsonString =
+        notificationAppLaunchDetails?.notificationResponse?.payload ?? '';
     final json = jsonString.isNotEmpty ? jsonDecode(jsonString) : {};
 
     return (json is Map<String, dynamic> && json.isNotEmpty)
@@ -167,9 +174,9 @@ class PushNotificationHandler {
   /*
    * Call when notification come  
    */
-  Future _notificationTappedHandler(String? jsonPayload) async {
-    if (jsonPayload?.isNotEmpty ?? false) {
-      final json = jsonDecode(jsonPayload!);
+  Future _notificationTappedHandler(NotificationResponse? detail) async {
+    if (detail?.payload?.isNotEmpty ?? false) {
+      final json = jsonDecode(detail!.payload!);
       final notification = NotificationModel.fromJson(json);
       _notificationEventManager.add(NotificationTapEvent(
         notification: notification,

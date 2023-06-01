@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
-import 'package:lazi_chat/presentation/utils/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
+import 'package:lunar_calendar/presentation/utils/index.dart';
 import 'package:logger/logger.dart';
 
 var navigator = PageNavigator();

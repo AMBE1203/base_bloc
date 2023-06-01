@@ -1,4 +1,4 @@
-import 'package:lazi_chat/core/error/index.dart';
+import 'package:lunar_calendar/core/error/index.dart';
 
 class ApiError extends RemoteException {
   ApiError({int? httpStatusCode, String? errorCode, String? errorMessage})

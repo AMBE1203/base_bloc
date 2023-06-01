@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:collection/collection.dart';
 
 import 'package:firebase_remote_config/firebase_remote_config.dart';
-import 'package:lazi_chat/core/utils/index.dart';
+import 'package:lunar_calendar/core/utils/index.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 const kForceUpdateKey = 'force_update';

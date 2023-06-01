@@ -1,5 +1,5 @@
-import 'package:lazi_chat/core/utils/index.dart';
-import 'package:lazi_chat/presentation/base/index.dart';
+import 'package:lunar_calendar/core/utils/index.dart';
+import 'package:lunar_calendar/presentation/base/index.dart';
 
 import 'index.dart';
 
