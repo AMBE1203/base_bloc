@@ -1,0 +1,6 @@
+{
+  "logout_account": {
+    "endpoint": "customer/logout",
+    "method": "put"
+  }
+}

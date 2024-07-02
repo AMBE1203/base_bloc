@@ -1,0 +1,10 @@
+{
+    "dart.env": {
+        "DEV_BASEURL": "https://dev.com",
+        "DEV_XAPI": "apikey_dev",
+        "STG_BASEURL": "https://stg.com",
+        "STG_XAPI": "apikey_stg",
+        "PROD_BASEURL": "https://prod.com",
+        "PROD_XAPI": "apikey_prod"
+    }
+}

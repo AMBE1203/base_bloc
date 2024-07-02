@@ -1,0 +1,9 @@
+import 'package:base_bloc/presentation/base/index.dart';
+import 'index.dart';
+
+class {ScreenName}Bloc extends BaseBloc<BaseEvent, {ScreenName}State> {
+  {ScreenName}Bloc() : super(initState: {ScreenName}State()) {}
+
+  @override
+  void dispose() {}
+}

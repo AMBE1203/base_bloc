@@ -1,0 +1,140 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+        {
+            "name": "Develop Debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "dev",
+                "--dart-define",
+                "FLAVOR=dev",
+                "--dart-define",
+                "BASEURL=${DEV_BASEURL}",
+                "--dart-define",
+                "XAPI=${DEV_XAPI}"
+            ]
+        },
+        {
+            "name": "Staging Debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "stg",
+                "--dart-define",
+                "FLAVOR=stg",
+                "--dart-define",
+                "URL=dev"
+            ]
+        },
+        {
+            "name": "Production Debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "prod",
+                "--dart-define",
+                "FLAVOR=prod",
+                "--dart-define",
+                "BASEURL=${PROD_BASEURL}",
+                "--dart-define",
+                "XAPI=${PROD_XAPI}"
+            ]
+        },
+        {
+            "name": "Develop Profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "toolArgs": [
+                "--flavor",
+                "dev",
+                "--dart-define",
+                "FLAVOR=dev",
+                "--dart-define",
+                "BASEURL=${DEV_BASEURL}",
+                "--dart-define",
+                "XAPI=${DEV_XAPI}"
+            ]
+        },
+        {
+            "name": "Staging Profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "toolArgs": []
+        },
+        {
+            "name": "Production Profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "toolArgs": [
+                "--dart-define",
+                "FLAVOR=prod",
+                "--dart-define",
+                "BASEURL=${PROD_BASEURL}",
+                "--dart-define",
+                "XAPI=${PROD_XAPI}"
+            ]
+        },
+        {
+            "name": "Develop Release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "dev",
+                "--release",
+                "--dart-define",
+                "FLAVOR=dev",
+                "--dart-define",
+                "BASEURL=${DEV_BASEURL}",
+                "--dart-define",
+                "XAPI=${DEV_XAPI}"
+            ]
+        },
+        {
+            "name": "Staging Release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "stg",
+                "--release",
+                "--dart-define",
+                "FLAVOR=stg",
+                "--dart-define",
+                "URL=dev"
+            ]
+        },
+        {
+            "name": "Production Release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "prod",
+                "--release",
+                "--dart-define",
+                "FLAVOR=prod",
+                "--dart-define",
+                "BASEURL=${PROD_BASEURL}",
+                "--dart-define",
+                "XAPI=${PROD_XAPI}"
+            ]
+        }
+    ]
+}

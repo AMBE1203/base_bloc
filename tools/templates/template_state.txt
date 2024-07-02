@@ -1,0 +1,22 @@
+import 'package:base_bloc/core/error/index.dart';
+import 'index.dart';
+import 'package:base_bloc/presentation/base/index.dart';
+
+class {ScreenName}State extends BaseState {
+  {ScreenName}State({
+    LoadingStatus? loadingStatus,
+    Failure? failure,
+  }) : super(
+      loadingStatus: loadingStatus ?? LoadingStatus.none,
+      failure: failure);
+
+  {ScreenName}State copyWith({
+    LoadingStatus? loadingStatus,
+    Failure? failure,
+  }) {
+    return {ScreenName}State(
+      loadingStatus: loadingStatus,
+      failure: failure,
+    );
+  }
+}

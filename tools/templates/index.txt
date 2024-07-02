@@ -1,0 +1,5 @@
+export '{screen_name}_bloc.dart';
+export '{screen_name}_event.dart';
+export '{screen_name}_page.dart';
+export '{screen_name}_router.dart';
+export '{screen_name}_state.dart';
