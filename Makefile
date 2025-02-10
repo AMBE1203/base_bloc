@@ -25,7 +25,7 @@ generate_bloc:
 
 # Define a rule to prompt for the screen name and run the Dart script
 prompt_and_generate: check_templates
-	@read -p "Enter ScreenName: " screenName; \
+	@read -p "Enter folder screen (demo_screen): " screenName; \
 	$(MAKE) generate_bloc SCREEN_NAME=$$screenName
 
 # Define a default target
@@ -43,7 +43,7 @@ clean:
 
 get:
 	flutter pub get
-
+# for vs code
 gen_env:
 	dart run tools/gen_env.dart
 
